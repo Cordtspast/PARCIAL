@@ -40,16 +40,17 @@
 
 
     /* Pie de página */
-    footer {
-        background-color:blanchedalmond;
-        color: darkolivegreen;
-        padding: 15px 0;
-        text-align: center;
-        width: 100%;
-        position: fixed;
-        bottom: 0;
-    }
+footer {
+    background-color:blanchedalmond;
+    color: darkolivegreen;
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
 
+    
 
 /* Contenedor principal */
 .container {
@@ -119,3 +120,31 @@
     .travel-image:hover {
         transform: scale(1.1); /* Efecto de hover para agrandar la imagen */
     }
+
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: flex-end; /* Mover los elementos al lado derecho */
+    background-color: #333333; /* Color del footer */
+    padding: 10px 20px 10px 10px; /* Ajustar padding para mejor apariencia */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 20px; /* Añadir margen derecho */
+}
+
+.navbar a:last-child {
+    margin-right: 0; /* Quitar margen derecho del último enlace */
+}
+
+.navbar a:hover {
+    background-color: #0b2947;
+}
