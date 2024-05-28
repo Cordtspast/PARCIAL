@@ -1,0 +1,121 @@
+
+ /* PASO 1 MOSTRAR LOS ESTILOS DIRECTO CON LAS ETIQUETAS */
+ 
+ body {
+    font-family: Arial, sans-serif;
+    margin: 10;
+    padding: 10;
+    background-color: greenyellow;
+    color: #0e0e0e;
+    }
+
+    header {
+        text-align: center;
+    
+    }
+
+    /* Título del Encabezado */
+    h1 {
+        
+        margin-bottom: 20px;
+        color: #0d0220;
+        text-align: center;
+    }
+
+    /* Subtítulo del Encabezado */
+    h2 {
+        font-size: 1.5em;
+        font-weight: normal;
+        color: maroon;
+        
+    }
+
+
+    /* Párrafo */
+    p {
+        line-height: 2.5;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+
+    /* Pie de página */
+    footer {
+        background-color:blanchedalmond;
+        color: darkolivegreen;
+        padding: 15px 0;
+        text-align: center;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+    }
+
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* PASO 2 MOSTRAR CON LA CLASE */
+
+
+
+
+    /* Contenido */
+    .content {
+        max-width: 800px;
+        padding: 20px;
+        text-align: center;
+    }
+
+
+
+    /* Botón */
+    .btn {
+        background-color: #009688;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        transition-duration: 0.4s;
+    }
+
+    /* Estilo al pasar el mouse por encima del botón */
+    .btn:hover {
+        background-color: #00796b;
+    }
+
+
+    /*Estilos para imágenes*/
+
+    .image-gallery {
+        display: flex;
+        justify-content: center;
+        gap: 20px; /* Espacio entre las imágenes */
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    /* Imágenes de Viaje */
+    .travel-image {
+        width: 200px;  /* Puedes ajustar el tamaño según tus necesidades */
+        height: 200px;
+        border-radius: 10px; /* Para esquinas redondeadas */
+        transition: transform 0.3s; /* Animación suave para el efecto hover */
+        cursor: pointer;
+    }
+    
+    .travel-image:hover {
+        transform: scale(1.1); /* Efecto de hover para agrandar la imagen */
+    }
